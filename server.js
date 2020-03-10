@@ -11,14 +11,6 @@ app.get('/', (request, response) => {
   response.sendFile(__dirname + '/views/index.html');
 });
 
-app.get('/basic', (request, response) => {
-  response.sendFile(__dirname + '/views/basic.html');
-});
-
-app.get('/animation', (request, response) => {
-  response.sendFile(__dirname + '/views/animation.html');
-});
-
 const PORT = IS_DEV ? 3000 : process.env.PORT;
 // listen for requests :)
 const listener = app.listen(PORT, () => {
